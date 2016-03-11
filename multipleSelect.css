@@ -1,0 +1,70 @@
+body {
+    font-size: 12px;
+    font-family: Arial,"ו";
+    background: #FFF;
+    margin: 0px;
+    padding: 0px;
+}
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+}
+
+.dselect {
+	background-color: #fff;
+	margin-top: 20px;
+	padding: 5px;
+}
+.dselect .opt {
+	float: left;
+    height: 100%;
+}
+.dselect .opt button{
+    width: 50px;
+    display: block;
+    margin: 25px 10px;
+}
+.dselect .left, .dselect .right{
+    float: left;
+    width: 44%;
+	height: 100%;
+    border: 1px #aaa solid;
+	overflow-y: scroll;
+}
+.dselect .panel {
+	width: 100%;
+	font-size: 12px;
+	color: #333333;
+	border-width: 1px;
+	border-color: #999999;
+	border-collapse: collapse;
+}
+.dselect .panel .line {
+	background-color: #7DC2CC;
+}
+.dselect .panel .line.oddrowcolor{
+	background-color:#d4e3e5;
+}
+.dselect .panel .line.evenrowcolor{
+	background-color:#c3dde0;
+}
+.dselect .panel .line.select {
+	background-color: #00BBFF;
+}
+.dselect .panel .line.over {
+	background-color: #33FFFF;
+}
+.dselect .panel .line th {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #a9c6c9;
+}
+.dselect .panel .line td {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #a9c6c9;
+}
+
