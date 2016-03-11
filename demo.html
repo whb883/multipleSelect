@@ -1,0 +1,40 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>multipleSelect Demo</title>
+<link href="./multipleSelect.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="dselect" style="height:200px;width:660px"></div>
+	<input type="text" name="myCareLeft"/>
+	<input type="text" name="myCareRight"/>
+	<div>12312312</div>
+	<script src="./jquery-1.8.2.js" type="text/javascript"></script>
+	<script src="./multipleSelect.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(function(){ 
+			var options = { 
+					left_head_json:[{th:'标题1'},{th:'th2'},{th:'th3'},{th:'th4'},{th:'th5'}],
+					right_head_json:[{th:'标题1'},{th:'th2'},{th:'th3'},{th:'th4'},{th:'th5'}],
+					left_body_json:[{td_key:'1',tds:[{td:'内容1'},{td:'td2'},{td:'td3'},{td:'td4'},{td:'td5'}]},
+									{td_key:'2',tds:[{td:'td1'},{td:'td2'},{td:'td3'},{td:'td4'},{td:'td5'}]},
+									{td_key:'3',tds:[{td:'td1'},{td:'td2'},{td:'td3'},{td:'td4'},{td:'td5'}]},
+									{td_key:'4',tds:[{td:'td1'},{td:'td2'},{td:'td3'},{td:'td4'},{td:'td5'}]},
+									{td_key:'5',tds:[{td:'td1'},{td:'td2'},{td:'td3'},{td:'td4'},{td:'td5'}]},
+									{td_key:'6',tds:[{td:'td1'},{td:'td2'},{td:'td3'},{td:'td4'},{td:'td5'}]},
+									{td_key:'7',tds:[{td:'td1'},{td:'td2'},{td:'td3'},{td:'td4'},{td:'td5'}]}],
+					right_body_json:[{td_key:'11',tds:[{td:'内容1'},{td:'td2'},{td:'td3'},{td:'td4'},{td:'td5'}]},
+									{td_key:'12',tds:[{td:'td1'},{td:'td2'},{td:'td3'},{td:'td4'},{td:'td5'}]},
+									{td_key:'13',tds:[{td:'td1'},{td:'td2'},{td:'td3'},{td:'td4'},{td:'td5'}]},
+									{td_key:'14',tds:[{td:'td1'},{td:'td2'},{td:'td3'},{td:'td4'},{td:'td5'}]},
+									{td_key:'15',tds:[{td:'td1'},{td:'td2'},{td:'td3'},{td:'td4'},{td:'td5'}]},
+									{td_key:'16',tds:[{td:'td1'},{td:'td2'},{td:'td3'},{td:'td4'},{td:'td5'}]},
+									{td_key:'17',tds:[{td:'td1'},{td:'td2'},{td:'td3'},{td:'td4'},{td:'td5'}]}],
+					ext_value_left:'input[name="myCareLeft"]',
+					ext_value_right:'input[name="myCareRight"]'
+				}
+			$(".dselect").multipleSelect(options);
+		});
+	</script>
+</body>
+</html>
